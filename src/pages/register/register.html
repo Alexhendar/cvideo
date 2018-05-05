@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <h2>注册</h2>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <form [formGroup]="registForm" (ngSubmit)="register()">
+    <ion-item>
+      <ion-label>用户名</ion-label>
+      <ion-input type="text" formControlName="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>密码</ion-label>
+      <ion-textarea formControlName="password"></ion-textarea>
+    </ion-item>
+    <button ion-button type="submit" [disabled]="!registForm.valid">注册</button>
+  </form>
+</ion-content>

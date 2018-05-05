@@ -1,0 +1,143 @@
+<!--<ion-header>
+  <ion-navbar>
+    <button ion-button  *ngFor="let item of buttons">
+      {{item}}
+    </button>
+
+  </ion-navbar>
+</ion-header>-->
+<ion-header>
+  <ion-slides (ionSlideDidChange)="slideChanged()">
+    <ion-slide  *ngFor="let item of buttons; index as i;">
+      <a (tap)="slideTap(item)">{{item}}</a>
+    </ion-slide>
+  </ion-slides>
+</ion-header>
+
+<ion-content padding>
+  <div class="row">
+    <div class="col">
+      <img src="assets/imgs/logo.png">
+      <p>会员昵称：视频短标题</p>
+      <p>会员点赞平均值</p>
+      <div>
+        <a class="button button-left">
+          <ion-icon name="thumbs-up"></ion-icon>
+        </a>
+        <a class="button button-right">
+          <ion-icon ios="ios-add" md="md-add"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <div class="col">
+      <img src="assets/imgs/logo.png">
+      <p>会员昵称：视频短标题</p>
+      <p>会员点赞平均值</p>
+      <div>
+        <a class="button button-left">
+          <ion-icon name="thumbs-up"></ion-icon>
+        </a>
+        <a class="button button-right">
+          <ion-icon ios="ios-add" md="md-add"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <div class="col">
+      <img src="assets/imgs/logo.png">
+      <p>会员昵称：视频短标题</p>
+      <p>会员点赞平均值</p>
+      <div>
+        <a class="button button-left">
+          <ion-icon name="thumbs-up"></ion-icon>
+        </a>
+        <a class="button button-right">
+          <ion-icon ios="ios-add" md="md-add"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <img src="assets/imgs/logo.png">
+      <p>会员昵称：视频短标题</p>
+      <p>会员点赞平均值</p>
+      <div>
+        <a class="button button-left">
+          <ion-icon name="thumbs-up"></ion-icon>
+        </a>
+        <a class="button button-right">
+          <ion-icon ios="ios-add" md="md-add"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <div class="col">
+      <img src="assets/imgs/logo.png">
+      <p>会员昵称：视频短标题</p>
+      <p>会员点赞平均值</p>
+      <div>
+        <a class="button button-left">
+          <ion-icon name="thumbs-up"></ion-icon>
+        </a>
+        <a class="button button-right">
+          <ion-icon ios="ios-add" md="md-add"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <div class="col">
+      <img src="assets/imgs/logo.png">
+      <p>会员昵称：视频短标题</p>
+      <p>会员点赞平均值</p>
+      <div>
+        <a class="button button-left">
+          <ion-icon name="thumbs-up"></ion-icon>
+        </a>
+        <a class="button button-right">
+          <ion-icon ios="ios-add" md="md-add"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <img src="assets/imgs/logo.png">
+      <p>会员昵称：视频短标题</p>
+      <p>会员点赞平均值</p>
+      <div>
+        <a class="button button-left">
+          <ion-icon name="thumbs-up"></ion-icon>
+        </a>
+        <a class="button button-right">
+          <ion-icon ios="ios-add" md="md-add"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <div class="col">
+      <img src="assets/imgs/logo.png">
+      <p>会员昵称：视频短标题</p>
+      <p>会员点赞平均值</p>
+      <div>
+        <a class="button button-left">
+          <ion-icon name="thumbs-up"></ion-icon>
+        </a>
+        <a class="button button-right">
+          <ion-icon ios="ios-add" md="md-add"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <div class="col">
+      <img src="assets/imgs/logo.png">
+      <p>会员昵称：视频短标题</p>
+      <p>会员点赞平均值</p>
+      <div>
+        <a class="button button-left">
+          <ion-icon name="thumbs-up"></ion-icon>
+        </a>
+        <a class="button button-right">
+          <ion-icon ios="ios-add" md="md-add"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
+
